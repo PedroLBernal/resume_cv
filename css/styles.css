@@ -1,0 +1,218 @@
+@media (max-width: 991px) {
+    /* Ocultar la imagen cuando el ancho sea 1080px o menos*/
+    .profile-img-container {
+        display: none !important;
+    }
+    /* Forzar que las barras de habilidades ocupen todo el ancho en pantallas pequeñas */
+    .skills-section .col-12.col-md-8 {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+@media (min-width: 991px) {
+    .profile-img-container {
+        left: 25%;
+    }
+
+    .tec-skills {
+        flex: 0 0 70% !important;
+        max-width: 70% !important;
+    }
+}
+
+body {
+    font-family: Calibri, serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+h2.section {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    transition: top 0.3s ease-in-out;
+}
+
+/* Espaciado para evitar que el contenido salte cuando el navbar se fija */
+.body-padding {
+    padding-top: 56px; 
+}
+
+/* Contenedor general del header */
+.header-container {
+    background: #343a40; 
+    position: relative;
+    width: 100%;
+    padding-bottom: 5rem;
+    overflow: hidden;
+}
+
+/* Parte superior (nombre) */
+.header-top {
+    padding-bottom: 1rem; 
+}
+
+.header-top h1 {
+    font-family: Georgia, serif;
+}
+
+/* Imagen de perfil centrada entre ambas mitades */
+.profile-img-container {
+    height: 160px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 35%; 
+    transform: translateY(-50%);
+}
+
+/* Imagen circular */
+.profile-img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    background: white;
+}
+
+/* Parte inferior (profesión y presentación) */
+.header-bottom {
+    background: #3d4349; 
+    padding: 2rem 1rem 2rem; 
+}
+
+.intro-text-bottom {
+    left: 20px;
+}
+
+/* Cuerpo */
+.cuerpo {
+    background: #a9a9a9;
+}
+
+nav button.btn{
+	height: 40px;
+	width: 110px;
+	background:#343a40;
+	border: none;
+    margin: 1px 10px;
+}
+
+nav a.boton{
+    font-size: 18px;
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+    align-items: center;
+    text-decoration: none;
+}
+
+nav button.btn:hover {
+    background: #f19a31;
+    color: #3d4349 !important;
+}
+
+.card-body {
+    background: #a9a9a9
+}
+
+.card {
+    margin: 10px 10px;
+    border-color: darkslategrey;
+}
+
+.txt-20 {
+    font-size: 20px;
+}
+
+.txt-14 {
+    font-size: 14px;
+}
+
+/* Para la flecha del botón "Mostrar Cursos"*/
+button i {
+    color: #000000; 
+    font-size: 1rem; 
+}
+
+.list-cometidos {
+    margin-left: 2%;
+}
+
+.link-email {
+    color: black; 
+    text-decoration: none;
+}
+
+
+.link-email:hover {
+    color: blue !important;
+    text-decoration: underline !important;
+}
+
+.link-email svg {
+  vertical-align: middle;
+}
+
+
+.color-darkgray {
+    color: #343a40;
+    border-color: #343a40;
+    background: #878787;
+}
+
+
+.card-project:hover {
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+.text-secondary{
+    color: #5f5f5f !important;
+}
+
+
+.background-black:hover {
+    background: #3d4349;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

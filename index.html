@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedro L Bernal</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css/css/flag-icon.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header-container text-white text-center py-4">
+        <div class="container">
+            <div class="header-top">
+                <h1>Pedro Luis Bernal</h1>
+                <p class="fs-4" data-i18n="title_a">Analista y Científico de Datos</p>
+                <p class="fs-4" data-i18n="title_b">Desarrollador de IA y Redes Neuronales</p>
+            </div>
+
+            <div class="profile-img-container">
+                <img src="img/profile_pic.PNG" alt="Profile picture" class="profile-img">
+            </div>
+
+            <div class="header-bottom border-primary-subtle rounded-3">
+                <p class="intro-text">
+                    <h4 data-i18n="airborne_a">"Ningún obstáculo será tan grande que no pueda superarlo."</h4>
+                </p>
+                <p class="intro-text-bottom">
+                    <h5 data-i18n="airborne_b">Espíritu de superación del Ideario Paracaidista</h5>
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="col">
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#about" data-i18n="about_button">Sobre mí</a></button>
+                    </li>
+                    <li class="col">
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#education" data-i18n="education_button">Formación</a></button>
+                    </li>
+                    <li class="col">
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#experience" data-i18n="experience_button">Experiencia</a></button>
+                    </li>
+                    <li class="col">
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#projects" data-i18n="projects_button">Proyectos</a></button>
+                    </li>
+                    <li class="col">
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#contact" data-i18n="contact_button">Contacto</a></button>
+                    </li>
+                </ul>
+            </div>
+            <div class="dropdown position-absolute end-0 me-3">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle text-white" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-globe text-info"></i> <span data-i18n="language_button">ES</span> <span id="lang_flag"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end bg-secondary">
+                            <li><button class="dropdown-item background-black text-white" onclick="setLanguage('es')"><span class="flag-icon flag-icon-es"></span> <span data-i18n="language_button_es">Español</span></button></li>
+                            <li><button class="dropdown-item background-black text-white" onclick="setLanguage('en')"><span class="flag-icon flag-icon-gb"></span> <span data-i18n="language_button_en">Inglés</span></button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="about" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="about_button">Sobre mí</h2>
+            <div class="card shadow-sm border-2 card-body txt-20">
+                <p data-i18n="about_a">
+                    Soy una persona seria, trabajadora y resolutiva, con más de 8 años de experiencia en bases de datos y análisis.
+                </p>
+                <p data-i18n="about_b">
+                    En los últimos años he decidido dar un paso más en mi desarrollo profesional, ampliando mis conocimientos hacia el análisis de datos avanzado,
+                    la creación de modelos de Inteligencia Artificial y el dominio de lenguajes de programación como Java, Python, R, SQL y HTML.
+                </p>
+                <p data-i18n="about_c">
+                    Mi objetivo es combinar mi experiencia en gestión de datos con las herramientas más actuales de la analítica y la IA para generar soluciones eficientes y de valor en entornos empresariales.
+                </p>
+            </div>
+            <!-- ====== Skills / Habilidades ====== -->
+            <div class="skills-section mt-4">
+                <div class="container">
+                    <div class="row g-4">
+
+                        <div class="col-12 col-md-8 tec-skills">
+                            <h3 class="mb-3" data-i18n="about_skills">Habilidades técnicas</h3>
+                            <h5 class="mb-3"><strong data-i18n="about_programming">Lenguajes de Programación</strong></h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Python</strong><span data-i18n="about_advanced">Avanzado</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel Python" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Java</strong><span data-i18n="about_interm_advanc">Intermedio - Avanzado</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel Java" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>C#</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel CSharp" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 55%"></div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3"><strong  data-i18n="about_ai_data">Inteligencia Artificial - Análisis de datos</strong></h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>R</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel R" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Pandas / PySpark</strong><span data-i18n="about_interm_advanc">Intermedio - Avanzado</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel Pandas" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Scikit-learn</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel scikit-learn" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3"><strong data-i18n="about_databases">Bases de datos</strong></h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>SQL</strong><span data-i18n="about_advanced">Avanzado</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel SQL" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>MySQL</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel MySQL" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 65%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Microsoft Access</strong><span data-i18n="about_advanced">Avanzado</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel Access" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3"><strong data-i18n="about_frontend">Lenguajes de Marcado y FrontEnd</strong></h5>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>HTML / CSS / Bootstrap</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel HTML CSS" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>JavaScript</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel JavaScript" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="mb-3" data-i18n="about_languages">Idiomas</h3>
+
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><span class="flag-icon flag-icon-es"></span><strong data-i18n="about_es">  Español:</strong> <span data-i18n="about_native">Nativo</span>     <span id="es-stars"></span></li>
+                                <li class="mb-2"><span class="flag-icon flag-icon-us"></span><strong data-i18n="about_en">  Inglés:</strong> <span data-i18n="about_b2">Intermedio-Avanzado - B2</span>     <span id="en-stars"></span></li>
+                                <li class="mb-2"><span class="flag-icon flag-icon-jp"></span><strong data-i18n="about_jp">  Japonés:</strong> <span data-i18n="about_n5">Principiante - N5</span>     <span id="jp-stars"></span></li>
+                                <li>
+                            </ul>
+
+                            <h3 class="mb-3" data-i18n="about_aptitudes">Aptitudes</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_teamwork">Trabajo en equipo</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_communication">Comunicación</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_resolution">Resolución de problemas</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_adapt">Adaptabilidad</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_fastlearn">Aprendizaje continuo</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_results">Orientación a resultados</span>
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="about_process">Optimización de procesos</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="education" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="education_button">Educación</h2>
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="education_master_datascience">Máster en Data Science y Business Analytics</strong></h4>
+                        <p class="card-text text-muted">
+                            <strong class="txt-20">IMF Business School</strong> – Madrid | <span data-i18n="may">Mayo</span> 2025
+                        </p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#competenciasMasterDataScience" aria-expanded="false" aria-controls="competenciasMasterDataScience">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="competenciasMasterDataScience">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-group-item card-body"><strong>Python</strong> <span data-i18n="and">y</span> <strong>R</strong> <span data-i18n="mastercomp_a">orientados a Inteligencia Artificial</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mastercomp_b1">Machine Learning</strong> <span data-i18n="mastercomp_b2">supervisado y no supervisado</span> <strong data-i18n="mastercomp_b3"></strong></li>
+                                <li class="list-group-item card-body"><strong>Deep Learning</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mastercomp_c">Estadística</strong> <span data-i18n="mastercomp_d">aplicada al análisis de datos</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mastercomp_e">Modelización predictiva</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mastercomp_f">Visualización de datos</strong> <span data-i18n="mastercomp_g">con librerías de Python</span></li>
+                                <li class="list-group-item card-body"><span data-i18n="mastercomp_h1">Bases de datos</span> <strong>SQL</strong> <span data-i18n="and">y</span> <strong>NoSQL</strong> <span data-i18n="mastercomp_h2"></span></li>
+                                <li class="list-group-item card-body"><strong>Data Mining</strong>: <span data-i18n="mastercomp_i">ficheros, API y web scraping</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mastercomp_j">Procesos ETL</strong> <span data-i18n="mastercomp_k">y automatización de flujos de datos</span></li>
+                                <li class="list-group-item card-body"><strong>Business Analytics</strong> <span data-i18n="mastercomp_l">y toma de decisiones basada en datos</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="education_dam">FPGS en Desarrollo de Aplicaciones Multiplataforma</strong></h4>
+                        <p class="card-text text-muted">
+                            <strong class="txt-20">IMF Business School</strong> – Madrid | <span data-i18n="jan">Enero</span> 2023
+                        </p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#competenciasDAM" aria-expanded="false" aria-controls="competenciasDAM">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="competenciasDAM">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-group-item card-body"><strong data-i18n="dam_a">Programación orientada a objetos</strong> <span data-i18n="with">con</span> <strong>Java</strong> <span data-i18n="and">y</span> <strong>C#</strong></li>
+                                <li class="list-group-item card-body"><span data-i18n="dam_b">Desarrollo de aplicaciones para entornos</span> <strong>Android</strong> <span data-i18n="dam_c">y escritorio</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_d">Bases de datos relacionales</strong> <span data-i18n="and">y</span> <span data-i18n="dam_e">lenguaje</span> <strong>SQL</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_f">Gestión de bases de datos</strong> <span data-i18n="with">con</span> <strong>MySQL</strong> <span data-i18n="and">y</span> <strong>SQL Server</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_g">Desarrollo web</strong> <span data-i18n="with">con</span> <strong>HTML5</strong>, <strong>CSS3</strong> <span data-i18n="and">y</span> <strong>JavaScript</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_h">Diseño de interfaces</strong> <span data-i18n="dam_i">y usabilidad</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_j">Integración de servicios web</strong> <span data-i18n="and">y</span> <span data-i18n="dam_k1">consumo de</span> <strong data-i18n="dam_k2">APIs REST</strong> <span data-i18n="dam_k3"></span></li> 
+                                <li class="list-group-item card-body"><strong data-i18n="dam_l">Control de versiones</strong> <span data-i18n="with">con</span> <strong>Git</strong> <span data-i18n="and">y</span> <strong>GitHub</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_m">Pruebas de software</strong> <span data-i18n="and">y</span> <span data-i18n="dam_n">depuración de código</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="dam_o">Gestión de proyectos</strong> <span data-i18n="with">con</span> <span data-i18n="dam_p1">metodologías</span> <strong data-i18n="dam_p2">ágiles</strong> <span data-i18n="dam_p3"></span> (SCRUM, Kanban)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong>MBA</strong></h4>
+                        <p class="card-text text-muted">
+                            <strong class="txt-20">EAE Business School - DEUSTO</strong> – Barcelona | 2014
+                        </p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#competenciasMBA" aria-expanded="false" aria-controls="competenciasMBA">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="competenciasMBA">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-group-item card-body"><strong data-i18n="mba_a">Dirección estratégica</strong> <span data-i18n="mba_b">y análisis competitivo</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_c">Gestión financiera</strong> <span data-i18n="and">y</span> <strong data-i18n="mba_d">análisis de inversiones</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_e1">Marketing</strong> <span data-i18n="mba_e2">estratégico y digital</span> <strong data-i18n="mba_e3"></strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_f">Gestión de proyectos</strong> <span data-i18n="mba_g">y liderazgo de equipos</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_h">Recursos Humanos</strong> <span data-i18n="mba_i">y desarrollo organizacional</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_j">Operaciones</strong> <span data-i18n="mba_k">y optimización de procesos</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_l1">Contabilidad</strong> <span data-i18n="mba_l2">financiera y de costes</span> <strong data-i18n="mba_l3">Contabilidad</strong></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_m">Negociación</strong> <span data-i18n="mba_n">y toma de decisiones</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="mba_o">Emprendimiento</strong> <span data-i18n="mba_p">y desarrollo de modelos de negocio</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="ade">Licenciatura en Administración y Dirección de Empresas</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="unisev">Universidad de Sevilla</strong> – <span data-i18n="seville">Sevilla</span> | 2011</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="nonregulated_training">Formación no reglada</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="trading">Formación en inversión y trading de Futuros y CFDs</strong> – Granada | 2017 - 2019</p>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="openwebinar">Formación en OpenWebinar</strong> – Online | 2022                           
+                            <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#extraTraining" aria-expanded="false" aria-controls="extraTraining">
+                                <span class="badge rounded-pill bg-secondary txt-14" data-i18n="show_courses">Mostrar Cursos</span>
+                                <i class="bi bi-chevron-down"></i>
+                            </button>
+                        </p>
+                        <div class="collapse" id="extraTraining">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-group-item card-body"><strong>C#</strong> <span data-i18n="opweb_a">para principiantes e intermedio</span> | 18 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>Javascript</strong> <span data-i18n="opweb_a">para principiantes e intermedio</span> | 10 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>TypeScript</strong> | 14 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>.NET Framework</strong> | 10 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>jQuery</strong> | 12 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>SQL</strong> <span data-i18n="opweb_b">desde cero</span> | 7 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>HTML5</strong> <span data-i18n="and">y</span> <strong>CSS3</strong>, <span data-i18n="opweb_c">Maquetación Web y Responsive Web Design</span> | 19 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong data-i18n="opweb_d">Metodologías Ágiles</strong> <span data-i18n="and">y</span> <span data-i18n="opweb_e1"></span> <strong>SCRUM</strong> <span data-i18n="opweb_e2">Técnico</span> | 16 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><strong>SOLID</strong> <span data-i18n="opweb_f">y patrones de diseño</span> | 8 <span data-i18n="hours">horas</span></li>
+                                <li class="list-group-item card-body"><span data-i18n="opweb_g1">Técnicas de</span> <strong>Refactoring</strong> <span data-i18n="opweb_g2"></span> <span data-i18n="and">y</span> <strong>clean code</strong> | 10 <span data-i18n="hours">horas</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="experience" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="experience_button">Experiencia</h2>
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="administrative">Administrativo</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="cefot">Centro de Formación de Tropa nº2 (CEFOT-2)</span></p>
+                        <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2017 - <span data-i18n="sept">Septiembre</span> 2025</p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosJefatura" aria-expanded="false" aria-controls="cometidosJefatura">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="cometidosJefatura">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-cometidos" data-i18n="cefot_a">Desarrollo de pequeños scripts para el procesamiento y limpieza de datos administrativos, facilitando la generación de informes y estadísticas académicas.</li>
+                                <li class="list-cometidos" data-i18n="cefot_b">Creación de plantillas automatizadas para reportes periódicos, mejorando la consistencia y reduciendo el tiempo de elaboración.</li>
+                                <li class="list-cometidos" data-i18n="cefot_c">Participación en proyectos de digitalización y organización de expedientes mediante el diseño de estructuras de bases de datos relacionales.</li>
+                                <li class="list-cometidos" data-i18n="cefot_d">Colaboración en la implementación de sistemas de control académico apoyados en métricas de rendimiento y dashboards interactivos.</li>
+                                <li class="list-cometidos" data-i18n="cefot_e">Exploración de técnicas básicas de análisis de datos y modelos predictivos orientados a detectar patrones de asistencia, rendimiento o necesidades de formación.</li>
+                                <li class="list-cometidos" data-i18n="cefot_f">Uso de consultas SQL y herramientas de análisis para obtener información clave y apoyar la toma de decisiones en la planificación académica.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="coder">Desarrollador de software</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20">INETUM</strong> – <span data-i18n="practicas_fpgs">Prácticas tuteladas FPGS</span></p>
+                        <p class="card-text text-muted"><span data-i18n="sept">Septiembre</span> 2022 - <span data-i18n="dec">Diciembre</span> 2022</p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosInetum" aria-expanded="false" aria-controls="cometidosInetum">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="cometidosInetum">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-cometidos" data-i18n="inetum_a">Diseño y desarrollo de aplicaciones a medida utilizando tecnologías front-end y back-end según los requerimientos del cliente.</li>
+                                <li class="list-cometidos" data-i18n="inetum_b">Participación en metodologías ágiles (SCRUM) colaborando con analistas y testers.</li>
+                                <li class="list-cometidos" data-i18n="inetum_c">Refactorización de código y aplicación de principios SOLID para mejorar la mantenibilidad de los proyectos.</li>
+                                <li class="list-cometidos" data-i18n="inetum_d">Automatización de procesos y pruebas unitarias para garantizar la calidad del software entregado.</li>
+                                <li class="list-cometidos" data-i18n="inetum_e">Documentación técnica de proyectos y soporte a usuarios en la fase de implementación.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="soldier">Soldado de Infantería</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="bripac_vi">Brigada Paracaidista "Almogávares VI"</span></p>
+                        <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2014 - <span data-i18n="june">Junio</span> 2017</p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosBripac" aria-expanded="false" aria-controls="cometidosBripac">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="cometidosBripac">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-cometidos" data-i18n="bripac_a">Trabajo en equipo en entornos de alta exigencia, fomentando la cooperación, la confianza y la comunicación efectiva.</li>
+                                <li class="list-cometidos" data-i18n="bripac_b">Gestión del estrés y capacidad de mantener la concentración en situaciones críticas.</li>
+                                <li class="list-cometidos" data-i18n="bripac_c">Disciplina y compromiso con el cumplimiento de objetivos, garantizando consistencia y responsabilidad en los proyectos.</li>
+                                <li class="list-cometidos" data-i18n="bripac_d">Adaptación rápida a entornos cambiantes y aprendizaje continuo para afrontar nuevos desafíos.</li>
+                                <li class="list-cometidos" data-i18n="bripac_e">Búsqueda de soluciones creativas ante limitaciones de recursos, habilidad clave para la programación y la optimización de procesos.</li>
+                                <li class="list-cometidos" data-i18n="bripac_f">Capacidad de liderazgo en la coordinación de pequeños equipos, potenciando el rendimiento colectivo y la toma de decisiones.</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="projects_button">Proyectos</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_a">MODELOS PREDICTIVOS DEL PRECIO DE LAS CRIPTOMONEDAS</h4>
+                            <p class="card-text text-muted cen"  data-i18n="project_a1">
+                                Estudio comparativo de diferentes modelos predictivos con distintos niveles de complejidad para evaluar su viabilidad en la predicción del precio de las criptomonedas, tomando como referencia el caso de Bitcoin.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_a2">Python · Scikit-learn · TensorFlow (Keras) · XGBoost · Red Neuronal Recurrente (RNN) · Support Vector Regressor (SVR)</small></p>
+                            <a href="pages/btc-data.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-database me-1"></i> <span data-i18n="data_extract">Extracción de datos</span></a>
+                            <a href="pages/btc-eda.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-bar-chart-line me-1"></i> <span data-i18n="eda_analysis">Análisis EDA</span></a>
+                            <a href="pages/btc-model.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-cpu me-1"></i> <span data-i18n="ia_model">Modelo</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_b">APRENDIZAJE POR REFUERZO: BANDIDO MULTIBRAZO</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_b1">
+                                Estudio aplicado del método del Bandido Multibrazo orientado a la optimización del contenido mostrado en una web, analizando el impacto de distintas imágenes sobre los visitantes.
+                                Mediante técnicas de aprendizaje por refuerzo, se determina de forma dinámica qué opción maximiza el número de clics, equilibrando exploración y explotación para mejorar progresivamente el rendimiento del sitio.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_b2">Python · Matplotlib · Aprendizaje por refuerzo · Bandido Multibrazo</small></p>
+                            <a href="pages/reinforcement-learning.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-arrow-repeat me-1"></i> <span data-i18n="multiarmed_bandit">Bandido Multibrazo</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_c">ESTIMACIÓN DEL PRECIO DE UN VEHÍCULO</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_c1">
+                                Desarrollo de un modelo predictivo para estimar el precio de un vehículo de segunda mano a partir de sus características. 
+                                Incluye un análisis exploratorio (EDA) y la aplicación de algoritmos de aprendizaje supervisado.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_c2">Python · Scikit-learn · XGBoost · Seaborn</small></p>
+                            <a href="pages/precio-vehiculo.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-bar-chart-line me-1"></i> <i class="bi bi-cpu me-1"></i> <span data-i18n="eda_model">EDA y Modelo</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_d">RESOLUCIÓN DE CUESTIONES MEDIANTE EL USO DE PYSPARK</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_d1">
+                                Aplicación de la interfaz PySpark para resolver diversas cuestiones relacionadas con clientes y contratos de una compañía de telecomunicaciones, combinando operaciones distribuidas y consultas SQL.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_d2">Python · PySpark · SQL · DataBricks</small></p>
+                            <a href="pages/pyspark-tables.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-database me-1"></i> <span data-i18n="tables">Preparación de Tablas</span></a>
+                            <a href="pages/pyspark-telco.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-table me-1"></i> <span data-i18n="quest_resolution">Resolución de cuestiones</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_e">COMPARACIÓN DE MODELOS DE CLASIFICACIÓN</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_e1">
+                                Comparación de distintos modelos de clasificación supervisada — regresión logística, red neuronal y random forest — con el objetivo de predecir la probabilidad de compra de los clientes en una web.
+                                Incluye un análisis exploratorio (EDA) y la evaluación de métricas de rendimiento para identificar el modelo con mejor capacidad predictiva.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_e2">Python · Scikit-learn · TensorFlow (Keras) · Seaborn · Matplotlib · Regresión Logística · Red Neuronal · Random Forest</small></p>
+                            <a href="pages/clasification.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-bar-chart-line me-1"></i> <i class="bi bi-cpu me-1"></i> <span data-i18n="eda_model">EDA y Modelo</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_f">MODELO DE REGRESIÓN LINEAL CON REGULARIZACIONES DE RIDGE Y LASSO</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_f1">
+                                Análisis de una muestra de salarios de profesores universitarios en Estados Unidos.
+                                Incluye un estudio exploratorio de los datos (EDA), el entrenamiento de un modelo de regresión lineal con regularizaciones Ridge y Lasso, y la evaluación de la normalidad de los residuos del modelo resultante.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_f2">R · dplyr · ggplot2 · glmnet</small></p>
+                            <a href="pages/linear-regression.html" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-bar-chart-line me-1"></i> <i class="bi bi-cpu me-1"></i> <span data-i18n="eda_model">EDA y Modelo</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_g">BASE DE DATOS ORIENTADA A GRAFOS: NEO4J</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_g1">
+                                Uso de la base de datos orientada a grafos (GDB) Neo4J y del lenguaje de consulta Cypher para analizar las relaciones entre personas contagiadas y no contagiadas por COVID-19, mediante la creación y exploración de nodos y aristas.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_g2">Neo4J · Cypher · GDB</small></p>
+                            <button onclick="openPDF('neo4j.pdf')" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-diagram-3 me-1"></i> Neo4J</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm border-1 card-project">
+                        <div class="card-body">
+                            <h4 class="card-title text-center" data-i18n="project_h">BASE DE DATOS NOSQL: MONGODB</h4>
+                            <p class="card-text text-muted cen" data-i18n="project_h1">
+                                Utilización de la base de datos NoSQL MongoDB y su lenguaje MongoDB Shell en un entorno Linux para la resolución de consultas relacionadas con mediciones de sensores IoT de temperatura, humedad y emisiones de CO₂.
+                            </p>
+                            <p class="text-secondary"><small data-i18n="project_h2">MongoDB · Linux · MongoDB Shell · NoSQL</small></p>
+                            <button onclick="openPDF('mongodb.pdf')" class="btn btn-outline-primary btn-sm color-darkgray" target="_blank"><i class="bi bi-collection me-1"></i> MongoDB</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="contact_button">Contacto</h2>
+            <p class="content-text">
+                <a class="link-email align-items-center" href="mailto:pedro.luis.bernal@gmail.com" title="Haz clic para enviar correo" data-i18n-title="email_title">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-at-fill me-2" viewBox="0 0 16 16">
+                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"></path>
+                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"></path>
+                    </svg><span data-i18n="email_text">Correo electrónico</span>
+                </a>
+                <button id="copy-email-btn" class="btn btn-outline-secondary btn-sm border-0" title="Haz clic para copiar la dirección de correo" data-i18n-title="email_clipboard_title">
+                    <i class="bi bi-clipboard"></i>
+                </button>
+
+                <!-- Mensaje de confirmación -->
+                <span id="copy-msg" class="text-success ms-2" style="display:none;" data-i18n="copied">¡Copiado!</span>
+            </p>
+            <p>
+                <a href="https://www.linkedin.com/in/pedro-luis-bernal-rodr%C3%ADguez-754995214/" target="_blank"
+                   class="text-decoration-none text-dark d-flex align-items-center link-email" title="Haz clic para ver mi perfil en LinkedIn" data-i18n-title="linkedin_title">
+                    <i class="bi bi-linkedin text-primary fs-4 me-2"></i>
+                    <span data-i18n="linkedin_profile">Perfil de LinkedIn</span>
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; <span id="currentYear"></span> - Pedro Luis Bernal Rodriguez</p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <!-- navbar responsive -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/language_cv.js" charset="UTF-8"></script>
+    <script src="js/script_cv.js"></script>
+    
+    
+
+</body>
+
+</html>
