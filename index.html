@@ -50,10 +50,10 @@
                         <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#about" data-i18n="about_button">Sobre mí</a></button>
                     </li>
                     <li class="col">
-                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#education" data-i18n="education_button">Formación</a></button>
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#experience" data-i18n="experience_button">Experiencia</a></button>
                     </li>
                     <li class="col">
-                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#experience" data-i18n="experience_button">Experiencia</a></button>
+                        <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#education" data-i18n="education_button">Formación</a></button>
                     </li>
                     <li class="col">
                         <button type="button" class="btn btn-secondary btn-sm"><a class="boton img-fluid" href="#projects" data-i18n="projects_button">Proyectos</a></button>
@@ -130,7 +130,7 @@
                                 </div>
                             </div>
 
-                            <h5 class="mb-3"><strong  data-i18n="about_ai_data">Inteligencia Artificial - Análisis de datos</strong></h5>
+                            <h5 class="mb-3"><strong data-i18n="about_ai_data">Inteligencia Artificial - Análisis de datos</strong></h5>
 
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between">
@@ -138,6 +138,15 @@
                                 </div>
                                 <div class="progress" role="progressbar" aria-label="Nivel R" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                     <div class="progress-bar" style="width: 60%"></div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between">
+                                    <strong>Power BI</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                </div>
+                                <div class="progress" role="progressbar" aria-label="Nivel powerbi" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 65%"></div>
                                 </div>
                             </div>
 
@@ -192,10 +201,10 @@
 
                             <div class="mb-3">
                                 <div class="d-flex justify-content-between">
-                                    <strong>HTML / CSS / Bootstrap</strong><span data-i18n="about_intermediate">Intermedio</span>
+                                    <strong>HTML / CSS / Bootstrap</strong><span data-i18n="about_advanced">Intermedio</span>
                                 </div>
-                                <div class="progress" role="progressbar" aria-label="Nivel HTML CSS" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 60%"></div>
+                                <div class="progress" role="progressbar" aria-label="Nivel HTML CSS" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 80%"></div>
                                 </div>
                             </div>
 
@@ -203,8 +212,8 @@
                                 <div class="d-flex justify-content-between">
                                     <strong>JavaScript</strong><span data-i18n="about_intermediate">Intermedio</span>
                                 </div>
-                                <div class="progress" role="progressbar" aria-label="Nivel JavaScript" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                    <div class="progress-bar" style="width: 50%"></div>
+                                <div class="progress" role="progressbar" aria-label="Nivel JavaScript" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar" style="width: 60%"></div>
                                 </div>
                             </div>
                         </div>
@@ -235,6 +244,84 @@
                     </div>
                 </div>
             </div>
+
+        </section>
+
+        <section id="experience" class="mb-5 cuerpo">
+            <h2 class="section" data-i18n="experience_button">Experiencia</h2>
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="coder">Desarrollador de software</strong> <strong data-i18n="and">y</strong> <strong data-i18n="dbmanager">Gestor de BBDD</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="cefot">Centro de Formación de Tropa nº2 (CEFOT-2)</span></p>
+                        <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2017 - <span data-i18n="sept">Septiembre</span> 2025</p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosJefatura" aria-expanded="false" aria-controls="cometidosJefatura">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="cometidosJefatura">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-cometidos" data-i18n="cefot_a">Análisis de datos para identificar patrones comportamiento de reclutas (Python y Power BI).</li>
+                                <li class="list-cometidos" data-i18n="cefot_b">Desarrollo y mantenimiento de aplicaciones internas (Java y Python).</li>
+                                <li class="list-cometidos" data-i18n="cefot_c">Programas de gestión y bases de datos propias (SIPERDEF).</li>
+                                <li class="list-cometidos" data-i18n="cefot_d">Modelos predictivos de abandono de reclutas (churn).</li>
+                                <li class="list-cometidos" data-i18n="cefot_e">Automatización de procesos administrativos mediante scripts y aplicaciones personalizadas (Python).</li>
+                                <li class="list-cometidos" data-i18n="cefot_f">Mantenimiento y gestión de bases de datos (Access y SQL).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="card shadow-sm border-2">
+                    <div class="card-body">
+                        <h4 class="card-title"><strong data-i18n="coder">Desarrollador de software</strong></h4>
+                        <p class="card-text text-muted"><strong class="txt-20">INETUM</strong> – <span data-i18n="practicas_fpgs">Prácticas tuteladas FPGS</span></p>
+                        <p class="card-text text-muted"><span data-i18n="sept">Septiembre</span> 2022 - <span data-i18n="dec">Diciembre</span> 2022</p>
+                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosInetum" aria-expanded="false" aria-controls="cometidosInetum">
+                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
+                            <i class="bi bi-chevron-down"></i>
+                        </button>
+                        <div class="collapse" id="cometidosInetum">
+                            <ul class="list-group list-group-flush card-body">
+                                <li class="list-cometidos" data-i18n="inetum_a">Diseño y desarrollo de aplicaciones (C# y .NET Framework).</li>
+                                <li class="list-cometidos" data-i18n="inetum_b">Mantenimiento y mejora de sistemas.</li>
+                                <li class="list-cometidos" data-i18n="inetum_c">Implementación de APIs y servicios web (C# y .NET Core).</li>
+                                <li class="list-cometidos" data-i18n="inetum_d">Trabajo en equipos ágiles (SCRUM).</li>
+                                <li class="list-cometidos" data-i18n="inetum_e">Operaciones CRUD (SQL).</li>
+                                <li class="list-cometidos" data-i18n="inetum_f">Responsive Web Design (HTML y Javascript).</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--<div>
+            <div class="card shadow-sm border-2">
+                <div class="card-body">
+                    <h4 class="card-title"><strong data-i18n="soldier">Soldado de Infantería</strong></h4>
+                    <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="bripac_vi">Brigada Paracaidista "Almogávares VI"</span></p>
+                    <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2014 - <span data-i18n="june">Junio</span> 2017</p>
+                    <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosBripac" aria-expanded="false" aria-controls="cometidosBripac">
+                        <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
+                        <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <div class="collapse" id="cometidosBripac">
+                        <ul class="list-group list-group-flush card-body">
+                            <li class="list-cometidos" data-i18n="bripac_a">Trabajo en equipo en entornos de alta exigencia, fomentando la cooperación, la confianza y la comunicación efectiva.</li>
+                            <li class="list-cometidos" data-i18n="bripac_b">Gestión del estrés y capacidad de mantener la concentración en situaciones críticas.</li>
+                            <li class="list-cometidos" data-i18n="bripac_c">Disciplina y compromiso con el cumplimiento de objetivos, garantizando consistencia y responsabilidad en los proyectos.</li>
+                            <li class="list-cometidos" data-i18n="bripac_d">Adaptación rápida a entornos cambiantes y aprendizaje continuo para afrontar nuevos desafíos.</li>
+                            <li class="list-cometidos" data-i18n="bripac_e">Búsqueda de soluciones creativas ante limitaciones de recursos, habilidad clave para la programación y la optimización de procesos.</li>
+                            <li class="list-cometidos" data-i18n="bripac_f">Capacidad de liderazgo en la coordinación de pequeños equipos, potenciando el rendimiento colectivo y la toma de decisiones.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>-->
 
         </section>
 
@@ -288,7 +375,7 @@
                                 <li class="list-group-item card-body"><strong data-i18n="dam_f">Gestión de bases de datos</strong> <span data-i18n="with">con</span> <strong>MySQL</strong> <span data-i18n="and">y</span> <strong>SQL Server</strong></li>
                                 <li class="list-group-item card-body"><strong data-i18n="dam_g">Desarrollo web</strong> <span data-i18n="with">con</span> <strong>HTML5</strong>, <strong>CSS3</strong> <span data-i18n="and">y</span> <strong>JavaScript</strong></li>
                                 <li class="list-group-item card-body"><strong data-i18n="dam_h">Diseño de interfaces</strong> <span data-i18n="dam_i">y usabilidad</span></li>
-                                <li class="list-group-item card-body"><strong data-i18n="dam_j">Integración de servicios web</strong> <span data-i18n="and">y</span> <span data-i18n="dam_k1">consumo de</span> <strong data-i18n="dam_k2">APIs REST</strong> <span data-i18n="dam_k3"></span></li> 
+                                <li class="list-group-item card-body"><strong data-i18n="dam_j">Integración de servicios web</strong> <span data-i18n="and">y</span> <span data-i18n="dam_k1">consumo de</span> <strong data-i18n="dam_k2">APIs REST</strong> <span data-i18n="dam_k3"></span></li>
                                 <li class="list-group-item card-body"><strong data-i18n="dam_l">Control de versiones</strong> <span data-i18n="with">con</span> <strong>Git</strong> <span data-i18n="and">y</span> <strong>GitHub</strong></li>
                                 <li class="list-group-item card-body"><strong data-i18n="dam_m">Pruebas de software</strong> <span data-i18n="and">y</span> <span data-i18n="dam_n">depuración de código</span></li>
                                 <li class="list-group-item card-body"><strong data-i18n="dam_o">Gestión de proyectos</strong> <span data-i18n="with">con</span> <span data-i18n="dam_p1">metodologías</span> <strong data-i18n="dam_p2">ágiles</strong> <span data-i18n="dam_p3"></span> (SCRUM, Kanban)</li>
@@ -303,7 +390,7 @@
                     <div class="card-body">
                         <h4 class="card-title"><strong>MBA</strong></h4>
                         <p class="card-text text-muted">
-                            <strong class="txt-20">EAE Business School - DEUSTO</strong> – Barcelona | 2014
+                            <strong class="txt-20">EAE Business School - DEUSTO</strong> – Barcelona
                         </p>
                         <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#competenciasMBA" aria-expanded="false" aria-controls="competenciasMBA">
                             <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
@@ -330,7 +417,7 @@
                 <div class="card shadow-sm border-2">
                     <div class="card-body">
                         <h4 class="card-title"><strong data-i18n="ade">Licenciatura en Administración y Dirección de Empresas</strong></h4>
-                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="unisev">Universidad de Sevilla</strong> – <span data-i18n="seville">Sevilla</span> | 2011</p>
+                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="unisev">Universidad de Sevilla</strong> – <span data-i18n="seville">Sevilla</span></p>
                     </div>
                 </div>
             </div>
@@ -340,7 +427,8 @@
                     <div class="card-body">
                         <h4 class="card-title"><strong data-i18n="nonregulated_training">Formación no reglada</strong></h4>
                         <p class="card-text text-muted"><strong class="txt-20" data-i18n="trading">Formación en inversión y trading de Futuros y CFDs</strong> – Granada | 2017 - 2019</p>
-                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="openwebinar">Formación en OpenWebinar</strong> – Online | 2022                           
+                        <p class="card-text text-muted">
+                            <strong class="txt-20" data-i18n="openwebinar">Formación en OpenWebinar</strong> – Online | 2022
                             <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#extraTraining" aria-expanded="false" aria-controls="extraTraining">
                                 <span class="badge rounded-pill bg-secondary txt-14" data-i18n="show_courses">Mostrar Cursos</span>
                                 <i class="bi bi-chevron-down"></i>
@@ -366,82 +454,6 @@
 
         </section>
 
-        <section id="experience" class="mb-5 cuerpo">
-            <h2 class="section" data-i18n="experience_button">Experiencia</h2>
-            <div>
-                <div class="card shadow-sm border-2">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong data-i18n="administrative">Administrativo</strong></h4>
-                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="cefot">Centro de Formación de Tropa nº2 (CEFOT-2)</span></p>
-                        <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2017 - <span data-i18n="sept">Septiembre</span> 2025</p>
-                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosJefatura" aria-expanded="false" aria-controls="cometidosJefatura">
-                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
-                            <i class="bi bi-chevron-down"></i>
-                        </button>
-                        <div class="collapse" id="cometidosJefatura">
-                            <ul class="list-group list-group-flush card-body">
-                                <li class="list-cometidos" data-i18n="cefot_a">Desarrollo de pequeños scripts para el procesamiento y limpieza de datos administrativos, facilitando la generación de informes y estadísticas académicas.</li>
-                                <li class="list-cometidos" data-i18n="cefot_b">Creación de plantillas automatizadas para reportes periódicos, mejorando la consistencia y reduciendo el tiempo de elaboración.</li>
-                                <li class="list-cometidos" data-i18n="cefot_c">Participación en proyectos de digitalización y organización de expedientes mediante el diseño de estructuras de bases de datos relacionales.</li>
-                                <li class="list-cometidos" data-i18n="cefot_d">Colaboración en la implementación de sistemas de control académico apoyados en métricas de rendimiento y dashboards interactivos.</li>
-                                <li class="list-cometidos" data-i18n="cefot_e">Exploración de técnicas básicas de análisis de datos y modelos predictivos orientados a detectar patrones de asistencia, rendimiento o necesidades de formación.</li>
-                                <li class="list-cometidos" data-i18n="cefot_f">Uso de consultas SQL y herramientas de análisis para obtener información clave y apoyar la toma de decisiones en la planificación académica.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="card shadow-sm border-2">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong data-i18n="coder">Desarrollador de software</strong></h4>
-                        <p class="card-text text-muted"><strong class="txt-20">INETUM</strong> – <span data-i18n="practicas_fpgs">Prácticas tuteladas FPGS</span></p>
-                        <p class="card-text text-muted"><span data-i18n="sept">Septiembre</span> 2022 - <span data-i18n="dec">Diciembre</span> 2022</p>
-                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosInetum" aria-expanded="false" aria-controls="cometidosInetum">
-                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="tasks">Cometidos</span>
-                            <i class="bi bi-chevron-down"></i>
-                        </button>
-                        <div class="collapse" id="cometidosInetum">
-                            <ul class="list-group list-group-flush card-body">
-                                <li class="list-cometidos" data-i18n="inetum_a">Diseño y desarrollo de aplicaciones a medida utilizando tecnologías front-end y back-end según los requerimientos del cliente.</li>
-                                <li class="list-cometidos" data-i18n="inetum_b">Participación en metodologías ágiles (SCRUM) colaborando con analistas y testers.</li>
-                                <li class="list-cometidos" data-i18n="inetum_c">Refactorización de código y aplicación de principios SOLID para mejorar la mantenibilidad de los proyectos.</li>
-                                <li class="list-cometidos" data-i18n="inetum_d">Automatización de procesos y pruebas unitarias para garantizar la calidad del software entregado.</li>
-                                <li class="list-cometidos" data-i18n="inetum_e">Documentación técnica de proyectos y soporte a usuarios en la fase de implementación.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="card shadow-sm border-2">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong data-i18n="soldier">Soldado de Infantería</strong></h4>
-                        <p class="card-text text-muted"><strong class="txt-20" data-i18n="army">Ejército de Tierra</strong> – <span data-i18n="bripac_vi">Brigada Paracaidista "Almogávares VI"</span></p>
-                        <p class="card-text text-muted"><span data-i18n="june">Junio</span> 2014 - <span data-i18n="june">Junio</span> 2017</p>
-                        <button class="btn btn-outline-secondary btn-sm border-0" type="button" data-bs-toggle="collapse" data-bs-target="#cometidosBripac" aria-expanded="false" aria-controls="cometidosBripac">
-                            <span class="badge rounded-pill bg-secondary txt-14" data-i18n="competencies">Competencias</span>
-                            <i class="bi bi-chevron-down"></i>
-                        </button>
-                        <div class="collapse" id="cometidosBripac">
-                            <ul class="list-group list-group-flush card-body">
-                                <li class="list-cometidos" data-i18n="bripac_a">Trabajo en equipo en entornos de alta exigencia, fomentando la cooperación, la confianza y la comunicación efectiva.</li>
-                                <li class="list-cometidos" data-i18n="bripac_b">Gestión del estrés y capacidad de mantener la concentración en situaciones críticas.</li>
-                                <li class="list-cometidos" data-i18n="bripac_c">Disciplina y compromiso con el cumplimiento de objetivos, garantizando consistencia y responsabilidad en los proyectos.</li>
-                                <li class="list-cometidos" data-i18n="bripac_d">Adaptación rápida a entornos cambiantes y aprendizaje continuo para afrontar nuevos desafíos.</li>
-                                <li class="list-cometidos" data-i18n="bripac_e">Búsqueda de soluciones creativas ante limitaciones de recursos, habilidad clave para la programación y la optimización de procesos.</li>
-                                <li class="list-cometidos" data-i18n="bripac_f">Capacidad de liderazgo en la coordinación de pequeños equipos, potenciando el rendimiento colectivo y la toma de decisiones.</li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="projects" class="mb-5 cuerpo">
             <h2 class="section" data-i18n="projects_button">Proyectos</h2>
             <div class="row">
@@ -449,7 +461,7 @@
                     <div class="card shadow-sm border-1 card-project">
                         <div class="card-body">
                             <h4 class="card-title text-center" data-i18n="project_a">MODELOS PREDICTIVOS DEL PRECIO DE LAS CRIPTOMONEDAS</h4>
-                            <p class="card-text text-muted cen"  data-i18n="project_a1">
+                            <p class="card-text text-muted cen" data-i18n="project_a1">
                                 Estudio comparativo de diferentes modelos predictivos con distintos niveles de complejidad para evaluar su viabilidad en la predicción del precio de las criptomonedas, tomando como referencia el caso de Bitcoin.
                             </p>
                             <p class="text-secondary"><small data-i18n="project_a2">Python · Scikit-learn · TensorFlow (Keras) · XGBoost · Red Neuronal Recurrente (RNN) · Support Vector Regressor (SVR)</small></p>
@@ -479,7 +491,7 @@
                         <div class="card-body">
                             <h4 class="card-title text-center" data-i18n="project_c">ESTIMACIÓN DEL PRECIO DE UN VEHÍCULO</h4>
                             <p class="card-text text-muted cen" data-i18n="project_c1">
-                                Desarrollo de un modelo predictivo para estimar el precio de un vehículo de segunda mano a partir de sus características. 
+                                Desarrollo de un modelo predictivo para estimar el precio de un vehículo de segunda mano a partir de sus características.
                                 Incluye un análisis exploratorio (EDA) y la aplicación de algoritmos de aprendizaje supervisado.
                             </p>
                             <p class="text-secondary"><small data-i18n="project_c2">Python · Scikit-learn · XGBoost · Seaborn</small></p>
@@ -599,5 +611,5 @@
 
 </body>
 
-
 </html>
+
